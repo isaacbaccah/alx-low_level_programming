@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-	char *sh = "_putchar.c";
-
-	while (*sh)
-	{
-		_putchar(*sh);
-		sh++;
-	}
-	_putchar('\n');
+	_putchar('_');
+	_putchar('p');
+	_purchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 
 	return (0);
 }
