@@ -2,7 +2,8 @@
 
 /**
  * print_diagonal - a function that draws a diagonal line on the terminal
- * @n: input number of times '\' should be printed
+ * @n: length of diagonal
+ *
  * Return: void
  */
 void print_diagonal(int n)
@@ -11,9 +12,9 @@ void print_diagonal(int n)
 
 	if (n <= 0)
 		_putchar('\n');
-	for (a = 1; a <= n; a++)
+	for (a = 0; a < n; a++)
 	{
-		for (b = 1; b < co; b++)
+		for (b = 0; b < a; b++)
 		{
 			_putchar(' ');
 		}
