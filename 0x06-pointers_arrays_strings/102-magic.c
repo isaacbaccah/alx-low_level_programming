@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ * main - Code begins
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
