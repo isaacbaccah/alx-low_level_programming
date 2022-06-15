@@ -1,98 +1,116 @@
 Readme
-TASK 0 0-reset_to_98.c
-Write a function that takes a pointer to an int as parameter and updates the value it points to to 98.
+TASK 0 0-isupper.c
+Write a function that checks for uppercase character.
 
-    Prototype: void reset_to_98(int *n);
+    Prototype: int _isupper(int c);
+    Returns 1 if c is uppercase
+    Returns 0 otherwise
 
-
-TASK 1 1-swap.c
-Write a function that swaps the values of two integers.
-
-    Prototype: void swap_int(int *a, int *b);
-    
-
-TASK 2 2-strlen.c
-Write a function that returns the length of a string.
-
-    Prototype: int _strlen(char *s);
-
-FYI: The standard library provides a similar function: strlen. Run man strlen to learn more.
+FYI: The standard library provides a similar function: isupper. Run man isupper to learn more.
 
 
-TASK 3 3-puts.c
-Write a function that prints a string, followed by a new line, to stdout.
+TASK 1 1-isdigit.c
+Write a function that checks for a digit (0 through 9).
 
-    Prototype: void _puts(char *str);
+    Prototype: int _isdigit(int c);
+    Returns 1 if c is a digit
+    Returns 0 otherwise
 
-FYI: The standard library provides a similar function: puts. Run man puts to learn more.
-
-
-TASK 4 4-print_rev.c
-Write a function that prints a string, in reverse, followed by a new line.
-
-    Prototype: void print_rev(char *s);
+FYI: The standard library provides a similar function: isdigit. Run man isdigit to learn more.
 
 
-TASK 5 5-rev_string.c
-Write a function that reverses a string.
+TASK 2 2-mul.c
+Write a function that multiplies two integers.
 
-    Prototype: void rev_string(char *s);
-
-
-TASK 6 6-puts2.c
-Write a function that prints every other character of a string, starting with the first character, followed by a new line.
-
-    Prototype: void puts2(char *str);
+    Prototype: int mul(int a, int b);
 
 
-TASK 7 7-puts_half.c
-Write a function that prints half of a string, followed by a new line.
+TASK 3 3-print_numbers.c 
+Write a function that prints the numbers, from 0 to 9, followed by a new line.
 
-    Prototype: void puts_half(char *str);
-    The function should print the second half of the string
-    If the number of characters is odd, the function should print the last n characters of the string, where n = (length_of_the_string - 1) / 2
-
-
-TASK 8 8-print_array.c
-Write a function that prints n elements of an array of integers, followed by a new line.
-
-    Prototype: void print_array(int *a, int n);
-    where n is the number of elements of the array to be printed
-    Numbers must be separated by comma, followed by a space
-    The numbers should be displayed in the same order as they are stored in the array
-    You are allowed to use printf
+    Prototype: void print_numbers(void);
+    You can only use _putchar twice in your code
 
 
-TASK 9 9-strcpy.c
+TASK 4 4-print_most_numbers.c
+Write a function that prints the numbers, from 0 to 9, followed by a new line.
 
-    Prototype: char *_strcpy(char *dest, char *src);
-
-Write a function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest.
-
-    Return value: the pointer to dest
-
-FYI: The standard library provides a similar function: strcpy. Run man strcpy to learn more.
+    Prototype: void print_most_numbers(void);
+    Do not print 2 and 4
+    You can only use _putchar twice in your code
 
 
-TASK 10 100-atoi.c
-Write a function that convert a string to an integer.
+TASK 5 5-more_numbers.c
+Write a function that prints 10 times the numbers, from 0 to 14, followed by a new line.
 
-    Prototype: int _atoi(char *s);
-    The number in the string can be preceded by an infinite number of characters
-    You need to take into account all the - and + signs before the number
-    If there are no numbers in the string, the function must return 0
-    You are not allowed to use long
-    You are not allowed to declare new variables of “type” array
-    You are not allowed to hard-code special values
-    We will use the -fsanitize=signed-integer-overflow gcc flag to compile your code.
-
-FYI: The standard library provides a similar function: atoi. Run man atoi to learn more.
+    Prototype: void more_numbers(void);
+    You can only use _putchar three times in your code
 
 
-TASK 11 101-keygen.c
-Create a program that generates random valid passwords for the program 101-crackme.
+TASK 6 6-print_line.c
+Write a function that draws a straight line in the terminal.
+
+    Prototype: void print_line(int n);
+    You can only use _putchar function to print
+    Where n is the number of times the character _ should be printed
+    The line should end with a \n
+    If n is 0 or less, the function should only print \n
+
+
+TASK 7 7-print_diagonal.c
+Write a function that draws a diagonal line on the terminal.
+
+    Prototype: void print_diagonal(int n);
+    You can only use _putchar function to print
+    Where n is the number of times the character \ should be printed
+    The diagonal should end with a \n
+    If n is 0 or less, the function should only print a \n
+
+
+TASK 8 8-print_square.c
+Write a function that prints a square, followed by a new line.
+
+    Prototype: void print_square(int size);
+    You can only use _putchar function to print
+    Where size is the size of the square
+    If size is 0 or less, the function should print only a new line
+    Use the character # to print the square
+
+
+TASK 9 9-fizz_buzz.c
+The “Fizz-Buzz test” is an interview question designed to help filter out the 99.5% of programming job candidates who can’t seem to program their way out of a wet paper bag.
+
+Write a program that prints the numbers from 1 to 100, followed by a new line. But for multiples of three print Fizz instead of the number and for the multiples of five print Buzz. For numbers which are multiples of both three and five print FizzBuzz.
+
+    Each number or word should be separated by a space
+    You are allowed to use the standard library
+
+
+TASK 10 10-print_triangle.c
+Write a function that prints a triangle, followed by a new line.
+
+    Prototype: void print_triangle(int size);
+    You can only use _putchar function to print
+    Where size is the size of the triangle
+    If size is 0 or less, the function should print only a new line
+    Use the character # to print the triangle
+
+
+TASK 11 100-prime_factor.c
+The prime factors of 1231952 are 2, 2, 2, 2, 37 and 2081.
+
+Write a program that finds and prints the largest prime factor of the number 612852475143, followed by a new line.
 
     You are allowed to use the standard library
-    You don’t have to pass the betty-style tests (you still need to pass the betty-doc tests)
-    man srand, rand, time
-    gdb and objdump can help
+    Your program will be compiled with this command: gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-prime_factor.c -o 100-prime_factor -lm
+
+
+TASK 12 101-print_number.c
+Write a function that prints an integer.
+
+    Prototype: void print_number(int n);
+    You can only use _putchar function to print
+    You are not allowed to use long
+    You are not allowed to use arrays or pointers
+    You are not allowed to hard-code special values
+
