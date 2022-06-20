@@ -8,7 +8,7 @@
  * Return: If a set is matched - a pointer to be matched byte.
  * If no set is matched - NULL.
  */
-char *strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int index;
 
