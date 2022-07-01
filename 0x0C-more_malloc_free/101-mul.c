@@ -41,7 +41,7 @@ char *create_xarray(int size)
 	array = malloc(sizeof(char) * size);
 
 	if (array == NULL)
-		return (98);
+		exit(98);
 
 	for (index = 0; index < (size - 1); index++)
 		array[index] = 'x';
