@@ -123,7 +123,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 		if (*mult < '0' || *mult > '9')
 		{
 			printf("Error\n");
-			return (98);
+			exit(98);
 		}
 
 		num = (*mult - '0') * digit;
