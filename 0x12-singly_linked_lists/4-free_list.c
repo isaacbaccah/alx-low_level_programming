@@ -7,13 +7,11 @@ nclude "lists.h"
  */
 void free_list(list_t *head)
 {
-	list_t *tmp;
+	if (head == NULL)
+		return;
 
-	while (head)
-	{
-		tmp = head->next;
-		free(head->str);
-		free(head);
-		head = tmp;
-	}
+	if (head->next != NULL)
+		free_list(head->next);
+	free(head->str);
+	free(head);
 }
